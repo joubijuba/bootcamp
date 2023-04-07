@@ -36,9 +36,19 @@ test ("abcd is anagram of dcba", () => {
     expect(isTrullyAnagram).toBe(true)
 })
 
+test ("abcd is not anagram of abce", () => {
+    const isNotAnagram = functions.isAnagram("abcd", "abce")
+    expect(isNotAnagram).toBe(false)
+})
+
 /// CHUNKY TEST
 
-test ("[1,2,3],3 will return [[1], [2], [3]]", () => {
+test ("([1,2,3],3) will return [[1, 2, 3]]", () => {
     const isChunked = functions.chunckArray([1,2,3], 3)
-    expect(isChunked).toEqual([[1], [2], [3]])
+    expect(isChunked).toEqual([[1, 2, 3]])
+})
+
+test ("([1,2,3],1) will return [[1],[2],[3]]", () => {
+    const isChunked = functions.chunckArray([1, 2, 3], 1)
+    expect(isChunked).toEqual([[1],[2],[3]])
 })
