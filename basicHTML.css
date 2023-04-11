@@ -64,17 +64,33 @@ img {
 }
 
 form {
-    max-width :70%;
-    justify-content : center ; 
-    align-items : center; 
-    height : 100hv;
+    display : flex ; 
+    align-items : center;
+    flex-direction : column ;
 }
 
-input {
-    width: 100%;
-    padding: 12px;
-    margin-bottom: 15px;
-    border: 1px solid #ccc;
-    border-radius: 3px;
-    font-size: 16px;
+form > input {
+    width: 75%;
+    align-self: center;
+    margin-bottom : 10px ; 
+}
+
+form > select {
+    width: 75%;
+    align-self: center;
+    margin-bottom : 10px ; 
+}
+
+form > textarea{
+    height: 200px ;
+    width: 75%;
+    align-self: center;
+    margin-bottom : 10px ; 
+}
+
+form > button {
+    width: 75px;
+    height: 30px;
+    color: black;
+    align-self: flex-end;
 }
