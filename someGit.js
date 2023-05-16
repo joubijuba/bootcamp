@@ -43,3 +43,13 @@
 
 /// KKKK
 // 
+
+
+/// STASH : ALLOWS TO SHELVE CHANGES MADE TO THE WORKING COPY
+// Let's say that there are some changes you aren't ready to commit
+// but you need to work on something else. You can use "git stash"
+// in order to stash those changes and then you can unstash them later on
+        // git stash
+        // git stash pop stash@{stash Id} (there can be several stashes)
+        // git stash drop stash@{stash Id} (in order to delete/clean a stash)
+        // git stash clear in order to remove all stashes
