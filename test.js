@@ -1,3 +1,7 @@
+/// TO RUN OUR TESTS:
+// npm run test
+
+
 const functions = require('./functions')
 
 test("Add 2+2 to equals 4", () => {

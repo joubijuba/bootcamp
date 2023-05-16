@@ -1,0 +1,96 @@
+nav {
+    background-color: rgb(94, 91, 91);
+    display : flex;
+    justify-content : space-between;    
+}
+
+nav > * {
+    color : white;
+    padding : 0px;
+    border : 0px;
+    margin : 0px;
+}
+
+nav a {
+    text-decoration : none;
+    color: white;
+    font-size:small;
+}
+
+nav a:hover {
+    background-color : lightgrey;
+}
+
+.middle {
+    background-color:lightgrey;
+    padding:50px;
+    border :50px;
+    display : flex;
+    align-items : center;
+    flex-direction : column ;
+    font-size : large
+}
+
+.middle p:last-child {
+    font-size : small 
+}
+
+.middle-pics h2{
+    padding:20px;
+    display : flex;
+    align-items : center;
+    flex-direction : column ;
+    font-size : large
+}
+
+.pics {
+    display : flex;
+    justify-content : space-around
+}
+
+img {
+    width : 100%;
+    height : auto;
+    border-radius : 8px;
+}
+
+.pics div {
+    border:solid;
+    border-width: 1px;
+    margin:5px;
+    border-radius:10px ;
+    border-color: grey;;
+    padding:0px;
+}
+
+form {
+    display : flex ; 
+    align-items : center;
+    flex-direction : column ;
+}
+
+form > input {
+    width: 75%;
+    align-self: center;
+    margin-bottom : 10px ; 
+}
+
+form > select {
+    width: 75%;
+    align-self: center;
+    margin-bottom : 10px ; 
+}
+
+form > textarea{
+    height: 200px ;
+    width: 75%;
+    align-self: center;
+    margin-bottom : 10px ; 
+}
+
+form > button {
+    width: 75px;
+    height: 30px;
+    color: black;
+    align-self: flex-end;
+}
